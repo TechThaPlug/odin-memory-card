@@ -1,6 +1,7 @@
 import { usePokemon } from "./hooks/usePokemon.js";
 import Game from "./components/Game.jsx";
 import "./styles/app.css";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // Defined outside the component so the array stays the same between renders
 const POKEMON_IDS = [1, 4, 6, 7, 9, 25, 39, 52, 94, 133, 143, 150];
@@ -30,6 +31,7 @@ function App() {
       )}
 
       {status === "ready" && <Game pokemon={pokemon} />}
+      <SpeedInsights />
     </main>
   );
 }
