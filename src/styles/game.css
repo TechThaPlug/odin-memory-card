@@ -1,0 +1,71 @@
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.scoreboard p {
+  margin: 0;
+}
+
+.result {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.result p {
+  margin: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 8px;
+  color: #1f2937;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover:not(:disabled) {
+  border-color: #3882f6;
+  transform: translateY(-3px);
+  filter: none;
+}
+
+.card:disabled {
+  cursor: default;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
